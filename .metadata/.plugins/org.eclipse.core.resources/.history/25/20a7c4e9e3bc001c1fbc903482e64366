@@ -1,0 +1,30 @@
+package databaseLab;
+
+import java.util.Scanner;
+
+public class DataLab {
+
+	public static void main(String[] args) {
+		String[] name = { "Jim Halpert", "Dwight Schrute", "Michael Scott", "Stanley Hudson", "Ryan the Temp" };
+		String[] town = { "Orlando, Florida", "Clark Summit, Pennsylvania", "Allentown, Pennsylvania",
+				"Scranton, Pennsylvania", "New York City, New York" };
+		int[] number = { 1, 2, 3, 4, 5 };
+		int person = 0;
+		String personString;
+		System.out.println("Welcome to our Java class. Which student would you like to learn about?");
+		System.out.println("Enter 1-5: ");
+		Scanner scnr = new Scanner(System.in);
+		int userInput = scnr.nextInt();
+		switch (userInput) {
+		case 1:
+			personString = name[0];
+			System.out.println("Person " + number[0] + "'s name is " + personString);
+			System.out.println("Would you like to know about " + name[0] + "?");
+			System.out.println("Enter 'hometown' or 'food':");
+		case 2:
+			personString = name[1];
+			System.out.println(personString);
+		}
+	}
+
+}
