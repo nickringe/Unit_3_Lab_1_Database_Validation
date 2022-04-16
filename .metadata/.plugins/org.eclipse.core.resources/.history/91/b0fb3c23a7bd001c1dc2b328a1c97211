@@ -210,6 +210,7 @@ public class DataLab {
 								System.exit(0);
 							} else {
 								System.out.println("Sorry, I didn't get that. Please try again.");
+								cont2 = true;
 
 							}
 
@@ -235,8 +236,6 @@ public class DataLab {
 						}
 					} while (cont2 = true);
 					break;
-				default:
-					System.out.println("That student does not exist. Please try again.");
 				}
 			} catch (IndexOutOfBoundsException e) {
 				System.out.println("I'm sorry, the input was out of bounds. Please try again.");
@@ -245,4 +244,5 @@ public class DataLab {
 			}
 		}
 	}
+
 }

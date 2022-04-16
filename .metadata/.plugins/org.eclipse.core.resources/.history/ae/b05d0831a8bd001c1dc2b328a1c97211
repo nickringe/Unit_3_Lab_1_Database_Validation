@@ -12,6 +12,7 @@ public class DataLab {
 		int[] number = { 1, 2, 3, 4, 5 };
 		boolean cont = true;
 		boolean cont2 = false;
+		boolean cont3 = false;
 		String personString;
 		System.out.println("Welcome to our Java class. Which student would you like to learn about?");
 		while (cont == true) {
@@ -210,9 +211,9 @@ public class DataLab {
 								System.exit(0);
 							} else {
 								System.out.println("Sorry, I didn't get that. Please try again.");
-
+								
 							}
-
+							
 						} else if (secondInput5.charAt(0) == 'f' || secondInput5.charAt(0) == 'F') {
 							System.out.println(personString + "'s favorite food is " + food[4]);
 							System.out.println("Would you like to know more? (yes/no)");
@@ -245,4 +246,5 @@ public class DataLab {
 			}
 		}
 	}
+
 }

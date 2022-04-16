@@ -210,6 +210,8 @@ public class DataLab {
 								System.exit(0);
 							} else {
 								System.out.println("Sorry, I didn't get that. Please try again.");
+//								cont2 = true;
+								break;
 
 							}
 
@@ -245,4 +247,5 @@ public class DataLab {
 			}
 		}
 	}
+
 }

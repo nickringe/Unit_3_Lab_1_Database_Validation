@@ -12,6 +12,7 @@ public class DataLab {
 		int[] number = { 1, 2, 3, 4, 5 };
 		boolean cont = true;
 		boolean cont2 = false;
+		boolean cont3 = false;
 		String personString;
 		System.out.println("Welcome to our Java class. Which student would you like to learn about?");
 		while (cont == true) {
@@ -199,19 +200,22 @@ public class DataLab {
 						String secondInput5 = scnr.next();
 						if (secondInput5.charAt(0) == 'h' || secondInput5.charAt(0) == 'H') {
 							System.out.println(personString + "'s hometown is " + town[4]);
+							do {
 							System.out.println("Would you like to know more? (yes/no)");
 							String thirdInput = scnr.next();
 
 							if (thirdInput.charAt(0) == 'y' || thirdInput.charAt(0) == 'Y') {
 								cont2 = false;
+								cont3 = false;
 								break;
 							} else if (thirdInput.charAt(0) == 'n' || thirdInput.charAt(0) == 'N') {
 								System.out.println("Thanks!");
 								System.exit(0);
 							} else {
 								System.out.println("Sorry, I didn't get that. Please try again.");
-
+								cont3 = true;
 							}
+							} while (cont3 = true);
 
 						} else if (secondInput5.charAt(0) == 'f' || secondInput5.charAt(0) == 'F') {
 							System.out.println(personString + "'s favorite food is " + food[4]);
@@ -245,4 +249,5 @@ public class DataLab {
 			}
 		}
 	}
+
 }
